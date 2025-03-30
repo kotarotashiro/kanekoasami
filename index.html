@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PremaNadi - 金子あさみサービス</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo"><img src="PremaNadi_logo.svg" alt="PremaNadi" class="logo-image"></div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#services">サービス</a></li>
+            <li><a href="#about">講師紹介</a></li>
+            <li><a href="#testimonials">お客様の声</a></li>
+            <li><a href="#blog">ブログ</a></li>
+            <li><a href="#contact" class="btn btn-primary">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero parallax-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>あなたの魂と人生を<br><span class="highlight">輝かせる</span></h1>
+        <p>PremaNadiでは、マヤ暦鑑定から各種講座、コンサルティングまで、あなたの人生をワクワクさせるサービスをご提供しています</p>
+        
+        <!-- 願望入力フォーム -->
+        <div class="wish-form">
+          <h3>あなたの望みはなんですか？</h3>
+          <p class="wish-form-subtitle">あなたの望む未来に近づくサービスをご提案します</p>
+          <div class="input-group">
+            <div class="input-wrapper">
+              <input type="text" id="wish-input" placeholder="例：自分の才能を見つけたい">
+              <div class="typewriter-placeholder">
+                <span class="typewriter-text"></span>
+              </div>
+            </div>
+            <button id="suggest-btn" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary">サービスを見る <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-outline">無料相談を予約 <i class="fas fa-message"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="floral-decoration"></div>
+  </section>
+
+  <!-- 自己実現プログラム特集セクション -->
+  <section id="featured" class="featured parallax-section">
+    <div class="container">
+      <div class="featured-content">
+        <div class="featured-text">
+          <span class="badge floating-element-fast">注力サービス</span>
+          <h2 class="reveal-on-scroll"><span class="highlight">未来創造3ヶ月プロジェクト</span><br>あなたの人生を変える集中プログラム</h2>
+          <p class="reveal-on-scroll">このプログラムは、あなたの才能と使命を発見し、理想の人生を設計するための3ヶ月間の集中プログラムです。マヤ暦鑑定をベースに、あなたの本質を深く理解し、具体的な行動計画を立てていきます。</p>
+          
+          <ul class="feature-list reveal-on-scroll">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>才能と使命の発見</strong>
+                <p>マヤ暦鑑定で、あなたの生まれ持った才能と使命を明らかにします</p>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>理想の人生設計</strong>
+                <p>あなたの望む人生を具体的にイメージし、設計していきます</p>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>具体的な行動計画</strong>
+                <p>理想の人生を実現するための具体的なステップを計画します</p>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>3ヶ月間の継続サポート</strong>
+                <p>定期的なセッションで、進捗確認と軌道修正を行います</p>
+              </div>
+            </li>
+          </ul>
+          
+          <div class="featured-buttons reveal-on-scroll">
+            <a href="#" class="btn btn-primary">詳細を見る <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-outline">無料相談を予約 <i class="fas fa-message"></i></a>
+          </div>
+        </div>
+        <div class="featured-image reveal-on-scroll">
+          <img src="写真素材/57B2BE4F-6B7A-465D-AA9D-B12164E9FBDC.jpg" alt="未来創造3ヶ月プロジェクト">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴セクション -->
+  <section class="features parallax-section">
+    <div class="container">
+      <h2 class="reveal-on-scroll">PremaNadiが選ばれる<span class="highlight">3つの理由</span></h2>
+      
+      <div class="features-grid">
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-image">
+            <img src="写真素材/1B165849-0AAD-43FD-9CFF-CE3483918907.jpg" alt="豊富な経験と実績">
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>豊富な経験と実績</h3>
+          <p>10年以上の実績と1000人以上の鑑定経験。あなたの才能と可能性を最大限に引き出します。</p>
+        </div>
+        
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-image">
+            <img src="写真素材/BF9FF406-E02C-47C0-8601-261283FC185D.jpg" alt="一人ひとりに寄り添う">
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>一人ひとりに寄り添う</h3>
+          <p>あなたの状況や目標に合わせたカスタマイズされたアドバイスとサポートを提供します。</p>
+        </div>
+        
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-image">
+            <img src="写真素材/19884343-0AA3-41D8-83E1-ADC095A64D86.jpg" alt="温かいコミュニティ">
+          </div>
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>温かいコミュニティ</h3>
+          <p>同じ志を持つ仲間との繋がりで、互いに高め合い、成長できる環境を提供します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービスマップセクション -->
+  <section id="services" class="services scroll-watch">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <h2>あなたに最適な<span class="highlight">サービスを見つける</span></h2>
+        <p>PremaNadiでは、あなたの目的や段階に合わせて最適なサービスをご提案しています。各カテゴリーのタブを選択して、サービス一覧をご確認ください。</p>
+      </div>
+      
+      <div class="service-tabs reveal-on-scroll">
+        <div class="tab-group">
+          <div class="tab-item active" data-tab="kantei">鑑定</div>
+          <div class="tab-item" data-tab="kouza">講座</div>
+          <div class="tab-item" data-tab="program">プログラム</div>
+          <div class="tab-item" data-tab="subscription">サブスク＆物販</div>
+        </div>
+        
+        <div class="tab-content">
+          <div class="tab-pane active" id="kantei">
+            <div class="service-list">
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="maya-personal">
+                  <div class="service-item-title">マヤ暦個人鑑定</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="maya-120min">
+                  <div class="service-item-title">マヤ暦120分鑑定</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="maya-work">
+                  <div class="service-item-title">マヤ暦お仕事コンサル</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="shinmitsu">
+                  <div class="service-item-title">真密教鑑定</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="tarot">
+                  <div class="service-item-title">タロットセッション</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane" id="kouza">
+            <div class="service-list">
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="maya-parenting">
+                  <div class="service-item-title">マヤ暦ミラクル子育て講座</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="maya-montessori">
+                  <div class="service-item-title">マヤ・モンテッソーリ講座</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="maya-basic">
+                  <div class="service-item-title">マヤ暦鑑定初級講座</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="kakehashi">
+                  <div class="service-item-title">かけはし講座</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="miracle-diary">
+                  <div class="service-item-title">ミラクルダイアリー講座</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="memory-oil-basic">
+                  <div class="service-item-title">メモリーオイル基礎講座</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane" id="program">
+            <div class="service-list">
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="future-creation">
+                  <div class="service-item-title">未来創造3ヶ月プロジェクト</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="startup-school">
+                  <div class="service-item-title">起業スクール</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="yoga-instructor">
+                  <div class="service-item-title">ヨガインストラクター講座</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane" id="subscription">
+            <div class="service-list">
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="synchrono-salon">
+                  <div class="service-item-title">金子あさみとシンクロサロン</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="memory-oil">
+                  <div class="service-item-title">メモリーオイル</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+              <div class="service-item">
+                <a href="#" class="service-link" data-service="miracle-diary-product">
+                  <div class="service-item-title">ミラクルダイアリー</div>
+                  <div class="service-item-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービスモーダル -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-header">
+        <h2 class="modal-title">サービスタイトル</h2>
+        <div class="modal-meta">
+          <span class="modal-category">カテゴリー</span>
+          <span class="modal-price">価格</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="modal-description">サービスの説明文がここに表示されます。</p>
+        
+        <div class="modal-section">
+          <h3>サービス内容</h3>
+          <ul class="content-list">
+            <!-- サービス内容のリストアイテムがここに追加されます -->
+          </ul>
+        </div>
+        
+        <div class="modal-section">
+          <h3>こんな方におすすめ</h3>
+          <p class="target-audience">対象者の説明がここに表示されます。</p>
+        </div>
+        
+        <div class="modal-section">
+          <h3>お申し込み方法</h3>
+          <p class="application-method">申し込み方法の説明がここに表示されます。</p>
+        </div>
+        
+        <div class="modal-section">
+          <h3>おすすめの次のサービス</h3>
+          <div class="related-services">
+            <!-- 関連サービスのアイテムがここに追加されます -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <a href="#contact" class="btn btn-primary">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- AIおすすめモーダル -->
+  <div id="suggestionModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSuggestionModal">&times;</span>
+      <div class="modal-header">
+        <h2 class="modal-title">あなたにおすすめのサービス</h2>
+      </div>
+      <div class="modal-body">
+        <p class="modal-description">あなたの「<span id="user-wish-text"></span>」という望みに基づいて、最適なサービスをご紹介します。</p>
+        <div class="suggestions-grid" id="modal-suggestions-grid">
+          <!-- JavaScriptで動的に生成されるサンプル -->
+          <div class="suggestion-card">
+            <div class="suggestion-header">
+              <h3 class="suggestion-title">マヤ暦個人鑑定</h3>
+              <div class="suggestion-meta">
+                <span class="suggestion-category">鑑定</span>
+                <span class="suggestion-price">¥15,000</span>
+              </div>
+            </div>
+            <p class="suggestion-description">あなたの生まれ持った才能、人生の目的、使命を読み解き、最適な人生の方向性をお伝えします。</p>
+            <div class="suggestion-footer">
+              <a href="#" class="btn btn-primary btn-sm service-link" data-service="maya-personal">詳細を見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 人気サービスハイライト -->
+  <section id="popular-services" class="wave-section">
+    <div class="container">
+      <h2 class="reveal-on-scroll">人気の<span class="highlight">サービス</span></h2>
+      
+      <div class="services-grid">
+        <div class="service-card reveal-on-scroll">
+          <div class="service-header">
+            <h3>マヤ暦個人鑑定</h3>
+            <span class="category">鑑定</span>
+            <span class="price">¥15,000</span>
+          </div>
+          <div class="service-body">
+            <p>あなたの生まれ持った才能、人生の目的、使命を読み解き、最適な人生の方向性をお伝えします。</p>
+            <a href="#" class="service-link" data-service="maya-personal">詳細を見る</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-on-scroll">
+          <div class="service-header">
+            <h3>マヤ暦ミラクル子育て講座</h3>
+            <span class="category">講座</span>
+            <span class="price">¥39,800</span>
+          </div>
+          <div class="service-body">
+            <p>子どもの才能を伸ばすマヤ暦の知恵と具体的な接し方を学ぶ、子育てに悩むママのための講座です。</p>
+            <a href="#" class="service-link" data-service="maya-parenting">詳細を見る</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-on-scroll">
+          <div class="service-header">
+            <h3>マヤ暦鑑定初級講座</h3>
+            <span class="category">講座</span>
+            <span class="price">¥79,800</span>
+          </div>
+          <div class="service-body">
+            <p>マヤ暦の基礎から鑑定方法までを学べる講座。自分や家族の才能を理解し、日々の生活に活かせます。</p>
+            <a href="#" class="service-link" data-service="maya-basic">詳細を見る</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-on-scroll">
+          <div class="service-header">
+            <h3>真密教鑑定</h3>
+            <span class="category">鑑定</span>
+            <span class="price">¥20,000</span>
+          </div>
+          <div class="service-body">
+            <p>古来から伝わる真密教の叡智を用いた鑑定。名前と生年月日に秘められた運命のコードを解読します。</p>
+            <a href="#" class="service-link" data-service="shinmitsu">詳細を見る</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-on-scroll">
+          <div class="service-header">
+            <h3>金子あさみとシンクロサロン</h3>
+            <span class="category">会員制サロン</span>
+            <span class="price">¥2,000/月</span>
+          </div>
+          <div class="service-body">
+            <p>マヤ暦ガイダンス、オンラインヨガ、限定ライブ配信など様々なコンテンツを月額定額で利用できます。</p>
+            <a href="#" class="service-link" data-service="synchrono-salon">詳細を見る</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-on-scroll">
+          <div class="service-header">
+            <h3>メモリーオイル</h3>
+            <span class="category">商品</span>
+            <span class="price">¥3,800〜</span>
+          </div>
+          <div class="service-body">
+            <p>才能や目標に合わせてブレンドしたアロマオイル。香りを通じて潜在意識に働きかけます。</p>
+            <a href="#" class="service-link" data-service="memory-oil">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 講師紹介 -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2><span class="highlight">金子あさみ</span>について</h2>
+          <p>マヤ暦鑑定士、ヨガインストラクター、メモリーオイルブレンダーとして活動。これまで1000人以上の鑑定実績を持ち、一人ひとりの才能と可能性を引き出すサポートを行っています。</p>
+          <p>「魂」と「人生」を輝かせ、ワクワクさせるエネルギーを高めることをミッションに、様々なサービスを通じて多くの方の人生の変化をサポートしています。</p>
+          
+          <ul class="credentials">
+            <li><i class="fas fa-check-circle"></i> マヤ暦鑑定士（上級）</li>
+            <li><i class="fas fa-check-circle"></i> 全米ヨガアライアンス認定講師</li>
+            <li><i class="fas fa-check-circle"></i> メモリーオイルマスターブレンダー</li>
+          </ul>
+          
+          <a href="#" class="btn btn-primary">プロフィールを詳しく見る <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="about-image">
+          <img src="写真素材/AD4432E5-2DEF-4EB4-87C1-4052234E6E6D.jpg" alt="金子あさみ">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お客様の声 -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="reveal-on-scroll">お客様の<span class="highlight">声</span></h2>
+      
+      <div class="testimonials-carousel reveal-on-scroll">
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="写真素材/35EB6A0F-43CB-4FCE-8420-2FB87F16A30D.jpg" alt="田中 美咲">
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-info">
+                <h3>田中 美咲</h3>
+                <p>32歳 / マヤ暦個人鑑定</p>
+              </div>
+            </div>
+            <p class="testimonial-text">自分の才能や強みが明確になり、仕事の方向性が見えました。鑑定後、思い切って転職し、今はとても充実しています。</p>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="写真素材/253358D0-7195-498C-A4AD-F3B8D3E0F871.jpg" alt="佐藤 健太">
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-info">
+                <h3>佐藤 健太</h3>
+                <p>45歳 / マヤ暦お仕事コンサル</p>
+              </div>
+            </div>
+            <p class="testimonial-text">長年悩んでいた仕事の問題が、自分の才能と合っていなかったことが分かりました。コンサル後、独立起業し、売上も3倍になりました。</p>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="写真素材/2BBC34B1-D910-449E-ADAC-CCF796B070F3.jpg" alt="山田 優子">
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-info">
+                <h3>山田 優子</h3>
+                <p>28歳 / 未来創造3ヶ月プロジェクト</p>
+              </div>
+            </div>
+            <p class="testimonial-text">人生の目的が見つからず悩んでいましたが、このプログラムで自分の使命を発見。今は毎日がワクワクしています。</p>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="写真素材/CBEA6BD1-3EC3-431E-BCA6-B358AF21CFF8.jpg" alt="鈴木 真理">
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-info">
+                <h3>鈴木 真理</h3>
+                <p>35歳 / シンクロサロン会員</p>
+              </div>
+            </div>
+            <p class="testimonial-text">サロンに入会して1年。オンラインヨガや限定ライブが充実していて、月額2,000円とは思えない価値があります。</p>
+          </div>
+          
+          <!-- 繰り返し部分（ループ用） -->
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="写真素材/35EB6A0F-43CB-4FCE-8420-2FB87F16A30D.jpg" alt="田中 美咲">
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-info">
+                <h3>田中 美咲</h3>
+                <p>32歳 / マヤ暦個人鑑定</p>
+              </div>
+            </div>
+            <p class="testimonial-text">自分の才能や強みが明確になり、仕事の方向性が見えました。鑑定後、思い切って転職し、今はとても充実しています。</p>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="写真素材/253358D0-7195-498C-A4AD-F3B8D3E0F871.jpg" alt="佐藤 健太">
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-info">
+                <h3>佐藤 健太</h3>
+                <p>45歳 / マヤ暦お仕事コンサル</p>
+              </div>
+            </div>
+            <p class="testimonial-text">長年悩んでいた仕事の問題が、自分の才能と合っていなかったことが分かりました。コンサル後、独立起業し、売上も3倍になりました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新ブログ記事 -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <div class="section-header-with-link">
+        <h2 class="reveal-on-scroll">最新<span class="highlight">ブログ</span></h2>
+        <a href="#" class="view-all">すべての記事を見る <i class="fas fa-arrow-right"></i></a>
+      </div>
+      
+      <div class="blog-grid">
+        <div class="blog-card reveal-on-scroll">
+          <div class="blog-image">
+            <img src="写真素材/99839221-BB08-4AB7-9227-EC66CF72DFE4.jpg" alt="ブログ記事1">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">2024.05.15</span>
+              <span class="blog-category">マヤ暦</span>
+            </div>
+            <h3><a href="#">マヤ暦で分かるあなたの才能と使命</a></h3>
+            <p>マヤ暦は単なる占いではなく、あなたの生まれ持った才能や使命を読み解くツールです。この記事では、マヤ暦の基本と自分の才能を見つける方法を解説します。</p>
+            <a href="#" class="read-more">続きを読む <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="blog-card reveal-on-scroll">
+          <div class="blog-image">
+            <img src="写真素材/FEEF5EEF-1F6C-4884-9F46-7444584866CD.jpg" alt="ブログ記事2">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">2024.05.10</span>
+              <span class="blog-category">自己実現</span>
+            </div>
+            <h3><a href="#">理想の人生を実現するための5つのステップ</a></h3>
+            <p>理想の人生を実現するためには、明確なビジョンと具体的な行動計画が必要です。この記事では、夢を現実にするための5つのステップを紹介します。</p>
+            <a href="#" class="read-more">続きを読む <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="blog-card reveal-on-scroll">
+          <div class="blog-image">
+            <img src="写真素材/FD3C3EEB-C969-462B-BE73-FFD6A9267873.jpg" alt="ブログ記事3">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">2024.05.05</span>
+              <span class="blog-category">ライフスタイル</span>
+            </div>
+            <h3><a href="#">毎日を充実させるマインドフルネスの実践方法</a></h3>
+            <p>忙しい日常の中で、心の平和を保ち、毎日を充実させるためのマインドフルネス実践法を紹介します。簡単に始められる瞑想法から日常に取り入れるコツまで。</p>
+            <a href="#" class="read-more">続きを読む <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- よくある質問 -->
+  <section class="faq">
+    <div class="container">
+      <h2>よくある<span class="highlight">質問</span></h2>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>マヤ暦鑑定とは何ですか？</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>マヤ暦鑑定は、古代マヤの叡智に基づいた鑑定方法で、あなたの生年月日から才能、使命、人生の目的などを読み解きます。単なる占いではなく、あなたの本質を理解し、人生をより良い方向に導くためのツールです。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>初めてでも大丈夫ですか？</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>はい、初めての方でも安心してご利用いただけます。事前知識は必要ありません。鑑定や講座の前には丁寧な説明を行い、分かりやすくお伝えしますので、安心してご参加ください。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>オンラインでの鑑定や講座は可能ですか？</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>はい、すべてのサービスはオンラインでも提供しています。Zoom等のビデオ通話を使用して、対面と変わらない質の高いサービスを提供しています。遠方の方や、ご自宅で受けたい方にも便利です。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>料金の支払い方法は？</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>クレジットカード、銀行振込、PayPalなど、複数の支払い方法に対応しています。お申し込み時に詳細をご案内いたします。また、分割払いが可能なプランもございますので、お気軽にご相談ください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact" class="contact parallax-section">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <h2>お気軽に<span class="highlight">お問い合わせ</span>ください</h2>
+        <p>ご質問、サービスに関するお問い合わせ、無料相談のご予約など、お気軽にご連絡ください。</p>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-info reveal-on-scroll">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>メールでのお問い合わせ</h3>
+              <p>フォームに必要事項をご記入の上、送信してください。24時間以内にご返信いたします。</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-line"></i>
+            </div>
+            <div class="contact-text">
+              <h3>公式LINEでのお問い合わせ</h3>
+              <p>LINEでもお気軽にご連絡いただけます。より迅速な対応が可能です。</p>
+              <a href="#" class="btn btn-outline btn-sm">LINE友達追加 <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>無料相談のご予約</h3>
+              <p>サービスについてのご質問や、あなたに合ったサービスをご案内する無料相談も承っております。</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form reveal-on-scroll">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">お名前 <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">メールアドレス <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">電話番号</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">お問い合わせ内容 <span class="required">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="">選択してください</option>
+                <option value="鑑定について">鑑定について</option>
+                <option value="講座について">講座について</option>
+                <option value="自己実現プログラムについて">自己実現プログラムについて</option>
+                <option value="商品について">商品について</option>
+                <option value="無料相談の予約">無料相談の予約</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">メッセージ <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <div class="privacy-policy">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy"><a href="#">プライバシーポリシー</a>に同意する <span class="required">*</span></label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">送信する <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- シンクロサロン -->
+  <section class="subscription">
+    <div class="container">
+      <div class="subscription-content">
+        <div class="subscription-image reveal-on-scroll">
+          <img src="写真素材/32323190-4C91-4907-8F34-9B5B609B53EB.jpg" alt="金子あさみとシンクロサロン">
+        </div>
+        <div class="subscription-text">
+          <span class="badge floating-element-fast">月額制サービス</span>
+          <h2 class="reveal-on-scroll">金子あさみと<span class="highlight">シンクロサロン</span></h2>
+          <p class="reveal-on-scroll">PremaNadiの全コンテンツに定額アクセスできる会員制サロン。マヤ暦鑑定、オンラインヨガ、限定ライブ配信など豊富なコンテンツをお楽しみいただけます。</p>
+          
+          <div class="pricing reveal-on-scroll">
+            <div class="price">
+              <span class="price-value">¥2,000</span>
+              <span class="price-period">/ 月（税込）</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check"></i> オンラインヨガが受け放題</li>
+                <li><i class="fas fa-check"></i> メンバー限定ライブ配信</li>
+                <li><i class="fas fa-check"></i> マヤ暦デイリーアドバイス</li>
+                <li><i class="fas fa-check"></i> 特別イベント優先案内</li>
+                <li><i class="fas fa-check"></i> 会員限定コミュニティ</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="subscription-cta reveal-on-scroll">
+            <a href="#" class="btn btn-primary">今すぐ入会する <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn btn-outline">詳細を見る</a>
+          </div>
+          
+          <div class="subscription-testimonial reveal-on-scroll">
+            <div class="testimonial-text">
+              <p><i class="fas fa-quote-left"></i> サロンに入会して1年。オンラインヨガや限定ライブが充実していて、月額2,000円とは思えない価値があります！ <i class="fas fa-quote-right"></i></p>
+            </div>
+            <div class="testimonial-author">
+              <img src="写真素材/CBEA6BD1-3EC3-431E-BCA6-B358AF21CFF8.jpg" alt="鈴木 真理">
+              <div>
+                <p><strong>鈴木 真理</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>あなたの人生を輝かせる第一歩を踏み出しませんか？</h2>
+      <p>PremaNadiのサービスで、あなたの才能と可能性を最大限に引き出し、ワクワクする毎日を手に入れましょう。</p>
+      
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn-light">無料相談を予約する <i class="fas fa-message"></i></a>
+        <a href="#services" class="btn btn-outline-light">サービス一覧を見る <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>PremaNadi</h3>
+          <p>金子あさみサービス</p>
+          <p class="footer-tagline">魂と人生を輝かせ、ワクワクさせるエネルギーを高める</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="#">マヤ暦鑑定</a></li>
+            <li><a href="#">各種講座</a></li>
+            <li><a href="#">未来創造プロジェクト</a></li>
+            <li><a href="#">シンクロサロン</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>お問い合わせ</h4>
+          <ul>
+            <li><a href="#">公式LINE</a></li>
+            <li><a href="#">メールフォーム</a></li>
+            <li><a href="#">よくある質問</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h4>フォロー</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> PremaNadi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- トップに戻るボタン -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
